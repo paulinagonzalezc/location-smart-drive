@@ -30,16 +30,31 @@ def upload_file():
         return "No selected file"
 
     if file:
-        # Secure the filename to prevent malicious file names
-        filename = secure_filename(file.filename)
-        # Save the file to the "uploads" folder
-        file.save(os.path.join(app.config["UPLOAD_FOLDER"], filename))
-        # Log the file name
-        print(f"Received file: {file.filename}")
+        # Use the get_current_location function to retrieve the location
+        location_name = get_current_location()
 
-        # Process the file
-        # Return a response
-        return "OK"
+        if location_name:
+            # Sanitize the location name to create a valid folder name
+            sanitized_location_name = location_name.replace(" ", "_")
+
+            # Create a folder with the sanitized location name inside the "uploads" folder
+            location_folder = os.path.join(
+                app.config["UPLOAD_FOLDER"], sanitized_location_name
+            )
+            os.makedirs(location_folder, exist_ok=True)
+
+            # Secure the filename to prevent malicious file names
+            filename = secure_filename(file.filename)
+            # Save the file to the "uploads" folder
+            file.save(os.path.join(location_folder, filename))
+            # Log the file name
+            print(f"Received file: {file.filename}")
+
+            # Process the file
+            # Return a response
+            return "OK"
+        else:
+            return "Location could not be determined."
 
     return "File upload failed"
 
