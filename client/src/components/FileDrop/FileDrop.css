@@ -1,9 +1,15 @@
 .file-drop-area {
-  border: 2px dashed #ccc;
+  border: 4px dashed #0c8ae7;
+  border-radius: 15px;
   padding: 20px;
   text-align: center;
+  background-color: white;
 }
 
 .file-drop-area.dragging {
   background-color: #f0f0f0;
+}
+
+body {
+  background-color: #efe3ff;
 }
