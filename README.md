@@ -64,8 +64,7 @@ To get a local copy up and running, follow these steps.
 In order to run this project you need:
 
 ```sh
- npm start
- python3 server.py
+ Python installed
 
 ```
 
@@ -78,31 +77,49 @@ Clone this repository to your desired folder:
   git clone  https://github.com/paulinagonzalezc/location-smart-drive
 ```
 
--
-
 ### Install
 
 Install this project with:
 
 ```sh
-  cd folder
-   npm install
-   python -m venv venv
-   pip install Flask
+For React
+  cd location-smart-drive
+  cd client
+  npm install
+
 ```
 
--
+```sh
+For Flask
+  1. Create a virtual environment:
+  cd location-smart-drive
+  cd flask-server
+  python -m venv venv
+  'The second venv is the name of the environment and can be anything, but venv is a common convention.'
+
+  2. Activate the virtual environment
+  Before installing the dependencies, the virtual environment must be activated:
+
+  On Windows: .\venv\Scripts\activate
+  On macOS and Linux: source venv/bin/activate
+
+  3. Install dependencies: With the virtual environment activated, you can now install the dependencies using the requirements.txt file:
+
+  pip install -r requirements.txt
+```
 
 ### Usage
 
 To run the project, execute the following command:
 
 ```sh
+Client:
+cd Client
  npm start
+Server:
+cd flask-server
  python3 server.py
 ```
-
--
 
 ### Run tests
 
