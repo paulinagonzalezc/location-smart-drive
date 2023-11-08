@@ -71,8 +71,8 @@ def get_uploaded_files():
 if __name__ == "__main__":
     app.run(debug=True)
     # this prints the current location
-    current_location = get_current_location()
-    if current_location:
-        print(f"Current Location: {current_location}")
-    else:
-        print("Location could not be determined.")
+    # current_location = get_current_location()
+    # if current_location:
+    #     print(f"Current Location: {current_location}")
+    # else:
+    #     print("Location could not be determined.")
