@@ -5,7 +5,6 @@ function App() {
   return (
     <div>
       <div className="title">Location Based Smart Drive</div>
-      <div className="subtitle">Save your files location based!</div>
     </div>
   );
 }

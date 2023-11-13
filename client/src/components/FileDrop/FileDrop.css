@@ -1,9 +1,9 @@
 .file-drop-area {
   border: 4px dashed #0c8ae7;
   border-radius: 15px;
-  padding: 20px;
-  width: 70%;
-  margin: 15px auto;
+  padding: 30px 10px;
+  width: 60%;
+  margin: 45px auto;
   text-align: center;
   background-color: white;
 }

@@ -2,11 +2,8 @@
 
 .title {
   text-align: center;
+  margin: 25px;
   font-size: 30px;
-}
-
-.subtitle {
-  text-align: center;
 }
 
 body {
