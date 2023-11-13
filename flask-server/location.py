@@ -1,11 +1,8 @@
-# import geocoder
 import requests
 
 
 def get_current_location():
     try:
-        # Use Geocoder to get the current location
-        # location = geocoder.ip("me")
         add = requests.get("https://api.ipify.org").text
         url = "https://get.geojs.io/v1/ip/geo/" + add + ".json"
         geo = requests.get(url)

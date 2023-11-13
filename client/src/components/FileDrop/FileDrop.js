@@ -1,9 +1,12 @@
 import React, {useState} from 'react';
 import '../FileDrop/FileDrop.css';
+import Form from '../Form/Form';
 
 function FileDropArea() {
   const [isDragging, setIsDragging] = useState(false);
-  const [Message, setMessage] = useState('waiting for file');
+  const [locationUndetermined, setLocationUndetermined] = useState(false);
+  const [Message, setMessage] = useState('Upload your file');
+  const [uploadStatus, setUploadStatus] = useState('');
 
   // Define event handlers for drag and drop interactions
   const handleDragEnter = (e) => {
@@ -38,27 +41,31 @@ function FileDropArea() {
       if (response.ok) {
         console.log('File upload successful');
         setMessage('File upload successful');
+        setUploadStatus('success');
       } else {
         console.error('File upload failed');
+        setMessage(
+          'File upload failed. Location could not be determined, please write city name below',
+        );
+        setLocationUndetermined(true);
+        setUploadStatus('failure');
       }
     } catch (error) {
       console.error('Error:', error);
     }
   };
 
-  // const handleDrop = (e) => {
-  //   e.preventDefault();
-  //   setIsDragging(false);
-
-  //   // Access the dropped files
-  //   const droppedFiles = Array.from(e.dataTransfer.files);
-  //   // Handle the dropped files here
-  //   console.log('Dropped files:', droppedFiles);
-  // };
-
   return (
     <div>
-      <div>{Message}</div>
+      <div
+        className={`message ${uploadStatus === 'success' ? 'success' : ''} ${
+          uploadStatus === 'failure' ? 'failure' : ''
+        }`}
+      >
+        {Message}
+      </div>
+      {/* Render Form only if location is undetermined */}
+      {locationUndetermined && <Form />}
       <div
         className={`file-drop-area ${isDragging ? 'dragging' : ''}`}
         onDragEnter={handleDragEnter}
