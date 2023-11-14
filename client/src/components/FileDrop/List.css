@@ -1,0 +1,36 @@
+.list-section {
+  text-align: left;
+  width: 70%;
+  margin: 10px auto;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.city-item {
+  background-color: #0c8ae7;
+  color: whitesmoke;
+  border-radius: 5px;
+  margin: 15px;
+  padding: 10px;
+  height: 2rem;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+}
+
+.file-item {
+  background-color: #bde3ff;
+  border-radius: 5px;
+  margin: 15px;
+  padding: 10px;
+  height: 1rem;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
+}
+
+.file-table {
+  width: 60%;
+}

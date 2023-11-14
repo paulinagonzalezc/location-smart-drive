@@ -1,7 +1,9 @@
 .file-drop-area {
   border: 4px dashed #0c8ae7;
   border-radius: 15px;
-  padding: 20px;
+  padding: 30px 10px;
+  width: 60%;
+  margin: 45px auto;
   text-align: center;
   background-color: white;
 }
@@ -12,4 +14,21 @@
 
 body {
   background-color: #efe3ff;
+}
+
+.message {
+  text-align: center;
+  background-color: white;
+  width: 45%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.success {
+  color: green;
+}
+
+.failure {
+  color: red;
 }
