@@ -1,5 +1,5 @@
 .list-section {
-  text-align: left;
+  text-align: center;
   width: 70%;
   margin: 10px auto;
 }
@@ -33,4 +33,5 @@
 
 .file-table {
   width: 60%;
+  margin: auto;
 }

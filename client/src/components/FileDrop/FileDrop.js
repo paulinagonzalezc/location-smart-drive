@@ -5,7 +5,7 @@ import Form from '../Form/Form';
 function FileDropArea() {
   const [isDragging, setIsDragging] = useState(false);
   const [locationUndetermined, setLocationUndetermined] = useState(false);
-  const [Message, setMessage] = useState('Save your files location based.');
+  const [Message, setMessage] = useState('Save your files based on location.');
   const [uploadStatus, setUploadStatus] = useState('');
 
   // Define event handlers for drag and drop interactions
