@@ -101,7 +101,7 @@ For Flask
   Before installing the dependencies, the virtual environment must be activated:
 
   On Windows: python -m vent <path>
-  On macOS and Linux: source venv/bin/activate
+  On macOS and Linux: source venv/bin/activate OR source venv/Scripts/activate
 
   3. Install dependencies: With the virtual environment activated, you can now install the dependencies using the requirements.txt file:
 
@@ -139,9 +139,9 @@ To run tests, run the following command:
 
 - GitHub: [@paulinagonzalezc](https://github.com/paulinagonzalezc)
 
-👤 **Author1z**
+👤 **Bilel Matmti**
 
-- GitHub: [@author](https://github.com/author)
+- GitHub: [@bmatmti](https://github.com/bmatmti)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
