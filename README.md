@@ -126,7 +126,11 @@ cd flask-server
 To run tests, run the following command:
 
 ```sh
-  npm test
+
+Server:
+Tests are on file test_app.py
+cd flask-server
+  python3 test_app.py
 ```
 
 ## Live Demo
