@@ -127,6 +127,11 @@ To run tests, run the following command:
 
 ```sh
 
+Client:
+Each file for a component has a testing file.
+cd client/src/components/__tests__
+  npm run test
+
 Server:
 Tests are on file test_app.py
 cd flask-server
