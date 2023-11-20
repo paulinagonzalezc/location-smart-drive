@@ -58,7 +58,7 @@ function FileDropArea() {
   return (
     <div>
       <div
-        className={`message ${uploadStatus === 'success' ? 'success' : ''} ${
+        data-testid="filedrop-todo-1" className={`message ${uploadStatus === 'success' ? 'success' : ''} ${
           uploadStatus === 'failure' ? 'failure' : ''
         }`}
       >
@@ -67,13 +67,14 @@ function FileDropArea() {
       {/* Render Form only if location is undetermined */}
       {locationUndetermined && <Form />}
       <div
+        data-testid="filedrop-todo-2"
         className={`file-drop-area ${isDragging ? 'dragging' : ''}`}
         onDragEnter={handleDragEnter}
         onDragOver={(e) => e.preventDefault()}
         onDragLeave={handleDragLeave}
         onDrop={handleDrop}
       >
-        <p>Drag & Drop your files to upload</p>
+        <p data-testid="filedrop-todo-3">Drag & Drop your files to upload</p>
       </div>
     </div>
   );

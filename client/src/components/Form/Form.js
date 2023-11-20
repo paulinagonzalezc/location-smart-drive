@@ -49,7 +49,7 @@ const Form = () => {
   return (
     <form className="submission-form" onSubmit={handleSubmit}>
       <div className="city-dialog">
-        <p className="form-text">
+        <p className="form-text" data-testid="form-todo-1">
           Please provide a city name and upload a file below:
         </p>
         <input
@@ -59,19 +59,19 @@ const Form = () => {
           className="form-input"
           required
         />
-        <p className="form-text">Select a file to upload:</p>
+        <p className="form-text" data-testid="form-todo-2">Select a file to upload:</p>
         <input
           type="file"
           onChange={handleFileChange}
           className="file-input"
           required
         />
-        <button type="submit" className="form-button">
+        <button type="submit" className="form-button" data-testid="form-todo-3">
           Submit
         </button>
       </div>
       <div></div>
-      <div>{Message}</div>
+      <div data-testid="form-todo-4">{Message}</div>
     </form>
   );
 };
