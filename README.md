@@ -116,6 +116,7 @@ To run the project, execute the following command:
 Client:
 cd Client
  npm start
+
 Server:
 cd flask-server
  python3 server.py
