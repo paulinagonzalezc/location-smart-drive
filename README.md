@@ -1,5 +1,3 @@
-<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="react" height="auto" />
-
 <div align="center">
   <h1><b>Location Based Smart Drive</b></h1>
 </div>
@@ -10,14 +8,12 @@
   - [🛠 Built With](#built-with)
   - [Tech Stack](#tech-stack)
   - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
   - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -139,8 +135,6 @@ cd flask-server
   python3 test_app.py
 ```
 
-## Live Demo
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Authors <a name="authors"></a>
@@ -152,6 +146,18 @@ cd flask-server
 👤 **Bilel Matmti**
 
 - GitHub: [@bmatmti](https://github.com/bmatmti)
+
+👤 **Adel Agha**
+
+- GitHub: [@AdelCommeng](https://github.com/AdelCommeng)
+
+👤 **Muhammad Qasim Idrees**
+
+- GitHub: [@Qasim102](https://github.com/Quasim102)
+
+👤 **Maida Khuzhaniyazova**
+
+- GitHub: [@nawamaidawa](https://github.com/nawamaidawa)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
