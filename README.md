@@ -153,7 +153,7 @@ cd flask-server
 
 👤 **Muhammad Qasim Idrees**
 
-- GitHub: [@Qasim102](https://github.com/Quasim102)
+- GitHub: [@Qasim102](https://github.com/Qasim102)
 
 👤 **Maida Khuzhaniyazova**
 
