@@ -31,7 +31,7 @@ def upload_file():
     # Use the get_current_location function to retrieve the location
     location_name = get_current_location()
 
-    if location_name is "None":
+    if location_name == "None":
         return "File upload failed."
 
     else:
